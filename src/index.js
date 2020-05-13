@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from "./App";
 
 // With JSX
 // const header = <h2 className="h2Class">This is header</h2>;
@@ -139,4 +140,4 @@ const element = (
   ></DisplayEmployee>
 );
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
