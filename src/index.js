@@ -104,7 +104,10 @@ function DisplayEmployee(employee) {
           Age: <b>{employee.Age}</b>
         </label>
       </p>
-      <Department deptName={employee.deptName}></Department>
+      <Department
+        deptName={employee.deptName}
+        deptId={employee.deptId}
+      ></Department>
     </div>
   );
 }
@@ -112,6 +115,11 @@ function DisplayEmployee(employee) {
 var Department = (deptInfo) => {
   return (
     <div>
+      <p>
+        <label>
+          Department ID: <b>{deptInfo.deptId}</b>
+        </label>
+      </p>
       <p>
         <label>
           Department Name: <b>{deptInfo.deptName}</b>
@@ -127,6 +135,7 @@ const element = (
     Name="Omar Faruk"
     Age="12"
     deptName="Java"
+    deptId="1"
   ></DisplayEmployee>
 );
 
